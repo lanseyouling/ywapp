@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hui 2.x</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="艾欧网络科技有限公司" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link type="text/css" href="../../../css/hui.css" rel="stylesheet" />
+    <style type="text/css"></style>
+</head>
+<body>
+    <header id="header" class="hui-header hui-min-height-40 hui-position-relative hui-background-color-emerald hui-box-sizing-content-box">
+        <span tapmode="" onclick="hui.closeWin();" class="hui-icon hui-position-relative hui-float-left hui-display-inline-block hui-zIndex-100 hui-height-40  hui-padding-col-5 hui-col-middle hui-background-color-emerald-active">
+            <i class="hui-iconfont hui-icon-arrow-left hui-font-size-18 hui-font-color-white hui-display-block"></i><label class="hui-display-inline-block hui-font-color-white hui-font-size-14">返回</label>
+        </span>
+        <div class="hui-header-title hui-center-all hui-height-40 hui-width-full hui-position-absolute hui-font-color-white hui-height-40 hui-font-size-18">
+            图文列表
+        </div>
+    </header>
+    <script type="text/javascript" src="../../../script/hui.js"></script>
+    <script type="text/javascript">
+        hui.ready(function () {
+            var framName = "richlist_body";
+            hui.openContentFrame(framName, framName + '.html', [["#header"]]);
+            // 解决openWin切换性能问题，完美原生体验
+            hui.optimizeLocation(framName);
+        });
+    </script>
+</body>
+</html>

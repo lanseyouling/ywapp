@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hui 2.x</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="艾欧网络科技有限公司" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link type="text/css" href="css/hui.css" rel="stylesheet" />
+    <style type="text/css">
+        .hui2-dot { -webkit-transform-origin: 110px 110px; pointer-events: none; z-index: 10; top: 0; left: 0; -webkit-animation-duration: 0.3s !important; }
+        .hahi:active i { color: yellow; }
+    </style>
+</head>
+<body class="hui-flexbox-col">
+    <div class="hui-center-all" style="height:260px;">
+        <div class="hui-text-align-center">
+            <img src="image/indexlogo.png" class="index-logo hui-max-height-110 hui-display-none animated zoomIn" />
+            <p class="index-des hui-font-size-18 hui-font-color-emerald hui-visibility-hidden animated">医院信息科专用信息运维平台</p>
+        </div>
+    </div>
+    <div class="hui-flexbox-item hui-background-color-emerald hui-center-all hui-overflow-hidden">
+        <div class="hui2-cont hui-width-height-220 hui-circle hui-center-all hui-position-relative animated" style="-webkit-transform:rotate(15deg);">
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all hui-font-color-turquoise hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(0deg);">
+                丰富
+            </span>
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all hui-font-color-carrot hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(60deg);">
+                快速
+            </span>
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all  hui-font-color-sunFlower hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(120deg);">
+                个性
+            </span>
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all hui-font-color-amethyst hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(180deg);">
+                扁平
+            </span>
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all hui-font-color-red hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(240deg);">
+                时尚
+            </span>
+            <span class="hui2-dot hui-display-block hui-width-height-60 hui-background-color-white hui-circle hui-position-absolute hui-center-all  hui-font-color-asbestos hui-display-none-important animated fadeIn" style="-webkit-transform:rotate(300deg);">
+                易学
+            </span>
+            <div class="hui-width-height-110 hui-background-color-white hui-circle hui-center-all">
+                <span tapmode="" onclick="hui.openWin('index_head', './html/index/index_head.html');" class="hahi hui-icon hui-font-color-white hui-background-color-emerald hui-circle hui-center-all animated">
+                    <i class="hui-iconfont hui-icon-hi hui-line-height-normal" style="font-size: 8.4rem;"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/hui.js"></script>
+    <script type="text/javascript">
+        function showDot(index) {
+            if (index <= 6) {
+                var cur = hui.single(".hui2-dot:nth-child(" + index + ")");
+                cur.classList.remove("hui-display-none-important");
+
+                cur.addEventListener("webkitAnimationEnd", function () {
+                    showDot(index + 1);
+                }, false);
+            }
+        }
+
+        hui.ready(function () {
+            setTimeout(function () {
+                // 移除启动画
+                hui.removeLaunchView();
+
+                var indexLogo = hui.single(".index-logo"), indexDes = hui.single(".index-des"), hahi = hui.single(".hahi");
+
+                indexLogo.classList.remove("hui-display-none");
+
+                indexLogo.addEventListener("webkitAnimationEnd", function () {
+                    indexDes.classList.remove("hui-visibility-hidden");
+                    indexDes.classList.add("fadeInUp");
+                }, false);
+
+                indexDes.addEventListener("webkitAnimationEnd", function () {
+                    hahi.classList.add("zoomIn");
+                }, false);
+
+                hahi.addEventListener("webkitAnimationEnd", function () {
+                    showDot(1);
+                }, false);
+
+                hui.single(".hui2-dot:nth-child(6)").addEventListener("webkitAnimationEnd", function () {
+                    hui.single(".hui2-cont").classList.add("flip");
+                }, false);
+            }, 2500);
+
+            hui.dblclickExit(true);
+        });
+    </script>
+</body>
+</html>

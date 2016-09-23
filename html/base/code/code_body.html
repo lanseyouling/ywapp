@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hui 2.x</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="艾欧网络科技有限公司" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link type="text/css" href="../../../css/hui.css" rel="stylesheet" />
+    <!--代码高亮-->
+    <link href="../../../plugins/rainbow/themes/css/obsidian.css" rel="stylesheet" />
+    <!--<link href="../../../plugins/rainbow/themes/css/github.css" rel="stylesheet" />-->
+    <script src="../../../plugins/rainbow/rainbow-custom.min.js"></script>
+    <!--代码高亮END-->
+    <style type="text/css"></style>
+</head>
+<body class="hui-body">
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        1
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="html"><p>世界上只有两种UI，Hui和其他UI。</p>
+<h1>百签软件（中山）有限公司</h1></code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        2
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="css">.hui-font-color-black { color: black; }
+.hui-font-color-white { color: white; }
+.hui-font-color-red { color: red; }
+.hui-font-color-blue { color: blue; }
+.hui-font-color-pink { color: pink; }
+.hui-font-color-yellow { color: yellow; }
+.hui-font-color-gray { color: gray; }</code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        3
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="html">exports.fixStatusBar = function (selectors) {
+    var that = this;
+    if (!that.apiExit()) {
+        return;
+    }
+    var ele = that.single(selectors);
+    if (ele && that.statusBarAppearance) {
+        if (that.systemType == that.constant.systemType.ios) {
+            ele.style.paddingTop = "20px";
+        }
+        else if (that.systemType == that.constant.systemType.android) {
+            ele.style.paddingTop = "25px";
+        }
+    }
+}</code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        4
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="csharp">#region 异步：异步加载并注入程序集 + public static async void LoadPluginDllAsync(ContainerBuilder builder)
+/// <summary>
+/// 异步加载并注入程序集
+/// </summary>
+/// <param name="builder"></param>
+public static async Task LoadPluginDllAsync(ContainerBuilder builder)
+{
+    var pluginDlls = await SearchPluginDllAsync();
+    if (pluginDlls.Any())
+    {
+        foreach (string dllPath in pluginDlls)
+        {
+            builder.RegisterControllers(Assembly.LoadFile(dllPath));
+        }
+    }
+}
+#endregion</code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        5
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="php">namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function hello(){
+        echo 'hello,thinkphp!';
+    }
+}</code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        6
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="java">public static void bubbleSort(int[] numbers) {
+    int temp; // 记录临时中间值
+    int size = numbers.length; // 数组大小
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = i + 1; j < size; j++) {
+            if (numbers[i] < numbers[j]) { // 交换两数的位置
+                temp = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = temp;
+            }
+        }
+    }
+}  </code></pre>
+    </div>
+    <div class="hui-width-height-50 hui-margin-row-10 hui-center-all hui-font-size-32 hui-circle hui-margin-col-auto hui-background-color-emerald hui-font-color-white">
+        7
+    </div>
+    <!--每一项分类-->
+    <div class="hui-theme-item">
+        <pre><code data-language="sql">select top 10 *
+from table1
+where id not in(
+    select top 开始的位置 id
+    from table1)</code></pre>
+    </div>
+    <script type="text/javascript" src="../../../script/hui.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

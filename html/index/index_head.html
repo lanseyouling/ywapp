@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hui 2.x</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="艾欧网络科技有限公司" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link type="text/css" href="../../css/hui.css" rel="stylesheet" />
+    <style type="text/css"></style>
+</head>
+<body class="hui-flexbox-col">
+     <footer id="footer" class="hui-footer hui-height-55 hui-background-color-white hui-border-top-e6e6e6 hui-flexbox-row hui-line-height-normal hui-margin-top-10">
+        <div class="hui-footer-item hui-flexbox-item hui-center-all hui-text-align-center hui-touch-active">
+            <div>
+                <span class="hui-icon hui-display-block hui-height-30">
+                    <i class="hui-iconfont hui-icon-ui hui-font-size-28 hui-font-color-turquoise"></i>
+                </span>
+                <label class="hui-font-size-12 hui-font-color-666">平台首页</label>
+            </div>
+        </div>
+        <div class="hui-footer-item hui-flexbox-item hui-center-all hui-text-align-center hui-touch-active">
+            <div>
+                <span class="hui-icon hui-display-block hui-height-30">
+                    <i class="hui-iconfont hui-icon-moban hui-font-size-28 hui-font-color-ccc"></i>
+                </span>
+                <label class="hui-font-size-12 hui-font-color-666 hui-font-color-ccc">运维信息</label>
+            </div>
+        </div>
+        <div tapmode="" onclick="hui.openWin('oabzsb_head', '../oabzsb/rwfp/oabzsb_head.html');" class="hui-footer-item hui-flexbox-item hui-center-all hui-text-align-center hui-touch-active hui-position-relative hui-overflow-visible-important">
+            <div class="hui-footer-half-circle hui-position-absolute hui-zIndex-10 hui-background-color-white hui-width-50 hui-height-25 hui-border-all-e6e6e6"></div>
+            <div class="hui-position-absolute hui-width-full hui-height-full hui-zIndex-100 hui-background-color-white hui-center-all">
+                <span class="hui-icon hui-display-block hui-height-45 hui-width-45 hui-background-color-turquoise hui-circle hui-center-all">
+                    <i class="hui-iconfont hui-icon-add hui-font-size-28 hui-font-color-white"></i>
+                </span>
+            </div>
+        </div>
+        <div class="hui-footer-item hui-flexbox-item hui-center-all hui-text-align-center hui-touch-active">
+            <div>
+                <span class="hui-icon hui-display-block hui-height-30">
+                    <i class="hui-iconfont hui-icon-tools hui-font-size-28 hui-font-color-ccc"></i>
+                </span>
+                <label class="hui-font-size-12 hui-font-color-666 hui-font-color-ccc">知识仓库</label>
+            </div>
+        </div>
+        <div class="hui-footer-item hui-flexbox-item hui-center-all hui-text-align-center hui-touch-active">
+            <div>
+                <span class="hui-icon hui-display-block hui-height-30">
+                    <i class="hui-iconfont hui-icon-user hui-font-size-28 hui-font-color-ccc"></i>
+                </span>
+                <label class="hui-font-size-12 hui-font-color-666 hui-font-color-ccc">个人中心</label>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../script/hui.js"></script>
+    <script type="text/javascript">
+        hui.ready(function () {
+            var framName = "index_body";
+            hui.openContentFrame(framName, framName + '.html', [["#header"]], {});
+            // 解决openWin切换性能问题，完美原生体验
+            hui.optimizeLocation(framName);
+
+           
+        });
+    </script>
+</body>
+</html>

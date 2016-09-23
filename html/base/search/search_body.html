@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hui 2.x</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="艾欧网络科技有限公司" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link type="text/css" href="../../../css/hui.css" rel="stylesheet" />
+    <style type="text/css"></style>
+</head>
+<body class="hui-body">
+    <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-all-8 hui-background-color-white">
+        <span class="hui-icon hui-padding-right-8">
+            <i class="hui-iconfont hui-icon-search hui-font-size-20 hui-font-color-ccc"></i>
+        </span>
+        <div class="hui-input-container hui-flexbox-item">
+            <input type="search" placeholder="总得写点什么..." class="hui-input hui-width-full hui-background-color-transparent hui-border-outline-none hui-font-size-16 hui-vertical-align-middle" />
+        </div>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-all-8 hui-background-color-white">
+        <div class="hui-input-container hui-flexbox-item">
+            <input type="search" placeholder="总得写点什么..." class="hui-input hui-width-full hui-background-color-transparent hui-border-outline-none hui-font-size-16 hui-vertical-align-middle" />
+        </div>
+        <span class="hui-icon hui-padding-left-8">
+            <i class="hui-iconfont hui-icon-search hui-font-size-20 hui-font-color-ccc"></i>
+        </span>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-all-5 hui-background-color-white">
+        <div class="hui-input-container hui-flexbox-item">
+            <input type="search" placeholder="总得写点什么..." class="hui-input hui-width-full hui-background-color-f4f4f4 hui-padding-all-5 hui-border-outline-none hui-font-size-16 hui-vertical-align-middle" />
+        </div>
+        <span class="hui-icon hui-padding-col-5">
+            <i class="hui-iconfont hui-icon-search hui-font-size-20 hui-font-color-ccc"></i>
+        </span>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <div class="hui-padding-all-10 hui-background-color-white">
+        <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-col-5 hui-padding-row-2 hui-background-color-f4f4f4">
+            <div class="hui-input-container hui-flexbox-item">
+                <input type="search" placeholder="总得写点什么..." class="hui-input hui-width-full hui-background-color-transparent hui-border-outline-none hui-font-size-14 hui-vertical-align-middle" />
+            </div>
+            <span class="hui-icon hui-padding-left-8">
+                <i class="hui-iconfont hui-icon-search hui-font-size-20 hui-font-color-ccc"></i>
+            </span>
+        </div>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <div class="hui-padding-all-10 hui-background-color-white">
+        <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-col-5 hui-padding-row-2 hui-background-color-f4f4f4 hui-border-radius-5 hui-overflow-hidden">
+            <div class="hui-input-container hui-flexbox-item">
+                <input type="search" placeholder="总得写点什么..." class="hui-input hui-width-full hui-background-color-transparent hui-border-outline-none hui-font-size-14 hui-vertical-align-middle" />
+            </div>
+            <span class="hui-icon hui-padding-left-8">
+                <i class="hui-iconfont hui-icon-search hui-font-size-20 hui-font-color-ccc"></i>
+            </span>
+        </div>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <div class="hui-padding-all-10 hui-background-color-white">
+        <div class="hui-input-row hui-flexbox-row hui-col-middle hui-max-width-full hui-padding-col-5 hui-padding-row-5 hui-background-color-f4f4f4 hui-border-radius-5 hui-overflow-hidden hui-position-relative">
+            <div tapmode="" class="hui-position-absolute hui-search-tip hui-width-height-full hui-offset-all-0 hui-background-color-f4f4f4 hui-zIndex-10 hui-center-all">
+                <span class="hui-icon">
+                    <i class="hui-iconfont hui-icon-search hui-font-size-15 hui-font-color-ccc"></i>
+                </span>
+                <label class="hui-font-color-ccc">请输入关键字....</label>
+            </div>
+            <div class="hui-input-container hui-flexbox-item">
+                <input type="search" placeholder="总得写点什么..." class="hui-input hui-input-tip hui-width-full hui-background-color-transparent hui-border-outline-none hui-font-size-14 hui-vertical-align-middle" />
+            </div>
+        </div>
+    </div>
+    <!--======分割线======-->
+    <div class="hui-height-5 hui-clear-both"></div>
+    <!--======分割线======-->
+    <script type="text/javascript" src="../../../script/hui.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            hui.single(".hui-search-tip").addEventListener("click", function () {
+                var that = this;
+                that.classList.add("hui-display-none-important");
+                hui.single(".hui-input-tip").focus();
+            });
+
+            hui.single(".hui-input-tip").addEventListener("blur", function () {
+                var that = this;
+                that.value = "";
+                hui.single(".hui-search-tip").classList.remove("hui-display-none-important");
+            });
+        };
+    </script>
+</body>
+</html>
